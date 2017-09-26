@@ -20,9 +20,9 @@ namespace Photogram.Controllers
             return View();
         }
 
-        public IActionResult PicturePage()
+        public IActionResult PicturePage(string id)
         {
-            ViewData["ImgSrc"] = "Src for picture";
+            ViewData["ImgSrc"] = "~/images/uploadedPictures/" + id;
             return View();
         }
 
