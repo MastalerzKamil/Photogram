@@ -22,7 +22,7 @@ namespace Photogram.Controllers
 
         public IActionResult PicturePage(string id)
         {
-            ViewData["ImgSrc"] = "~/images/uploadedPictures/" + id;
+            ViewData["ImgSrc"] = "images/uploadedPictures/" + id;
             return View();
         }
 

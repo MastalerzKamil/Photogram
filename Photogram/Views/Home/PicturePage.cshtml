@@ -1,9 +1,10 @@
 
 @{
     ViewData["Title"] = "PicturePage";
-    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <h2>PicturePage</h2>
-<img src="@ViewData["ImgSrc"]"/>
+<div>
+    <img src="~/@ViewData["ImgSrc"].ToString()" />
+</div>
 
