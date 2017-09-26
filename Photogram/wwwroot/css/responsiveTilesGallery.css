@@ -1,5 +1,8 @@
 ﻿body {
-    margin: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-top: 100px;
     padding: 0;
     background: #EEE;
     font: 10px/13px 'Lucida Sans',sans-serif;
@@ -17,7 +20,6 @@
     width: 20%;
     padding-bottom: 20%;
 }
-
 .boxInner {
     position: absolute;
     left: 10px;
@@ -27,6 +29,9 @@
     overflow: hidden;
 }
 .boxInner img { width: 100% }
+.uploadForm {
+    top: 40px;
+}
 
 
 @media only screen and (max-width:480px) { 

@@ -20,12 +20,11 @@ namespace Photogram.Controllers
             return View();
         }
 
-        //public IActionResult About()
-        //{
-        //    ViewData["Message"] = "Your application description page.";
-
-        //    return View();
-        //}
+        public IActionResult PicturePage()
+        {
+            ViewData["ImgSrc"] = "Src for picture";
+            return View();
+        }
 
         public IActionResult Contact()
         {

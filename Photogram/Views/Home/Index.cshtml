@@ -1,58 +1,76 @@
-﻿@{
+﻿@using Microsoft.AspNetCore.Mvc
+@using Photogram.Controllers
+@using Photogram.Models.PictureViewModels
+@{
     ViewData["Title"] = "Home Page";
 }
+<div>
+    <div class="uploadForm">
+        <form action="uploadPicture" method="post" enctype="multipart/form-data">
+            <input type="file" name="choosingFile">
+            <input type="submit">
+        </form>
+    </div>
+    <br />
+    <br />
 
-<div class="wrap">
-    <!-- Define all of the tiles: -->
-    <div class="box">
-        <div class="boxInner">
-            <img src="images/uploadedPictures/coffe.jpg"/>
-        </div>
-    </div>
-    <div class="box">
-        <div class="boxInner">
-            <img src="images/uploadedPictures/cityPhoto.jpg"/>
-        </div>
-    </div>
-    <div class="box">
-        <div class="boxInner">
-            <img src="images/uploadedPictures/girlfriend.jpg"/>
-        </div>
-    </div>
-    <div class="box">
-        <div class="boxInner">
-            <img src="images/uploadedPictures/h1o9ua-l.jpg"/>
-        </div>
-    </div>
-    <div class="box">
-        <div class="boxInner">
-            <img src="images/uploadedPictures/holidayGirl.jpg"/>
-        </div>
-    </div>
-    <div class="box">
-        <div class="boxInner">
-            <img src="images/uploadedPictures/icecream.jpg"/>
-            <div class="titleBox">
-                The garden shop
+    <div class="wrap">
+        <!-- Define all of the tiles: -->
+        <div class="box">
+            <div class="boxInner">
+                <a href="">
+                    <img src="images/uploadedPictures/coffe.jpg" />
+                </a>
             </div>
         </div>
-    </div>
-    <div class="box">
-        <div class="boxInner">
-            <img src="images/uploadedPictures/rainbowAngel.jpg"/>
-            <div class="titleBox">
-                Spring daffodils
+        <div class="box">
+            <div class="boxInner">
+                <a href="">
+                    <img src="images/uploadedPictures/cityPhoto.jpg" />
+                </a>
             </div>
         </div>
-    </div>
-    <div class="box">
-        <div class="boxInner">
-            <img src="images/uploadedPictures/sunshineIsland.jpg"/>
-            <div class="titleBox">
-                Iris along the path
+        <div class="box">
+            <div class="boxInner">
+                <a href="">
+                    <img src="images/uploadedPictures/girlfriend.jpg" />
+                </a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="boxInner">
+                <img src="images/uploadedPictures/h1o9ua-l.jpg" />
+            </div>
+        </div>
+        <div class="box">
+            <div class="boxInner">
+                <img src="images/uploadedPictures/holidayGirl.jpg" />
+            </div>
+        </div>
+        <div class="box">
+            <div class="boxInner">
+                <img src="images/uploadedPictures/icecream.jpg" />
+                <div class="titleBox">
+                    The garden shop
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="boxInner">
+                <img src="images/uploadedPictures/rainbowAngel.jpg" />
+                <div class="titleBox">
+                    Spring daffodils
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="boxInner">
+                <img src="images/uploadedPictures/sunshineIsland.jpg" />
+                <div class="titleBox">
+                    Iris along the path
+                </div>
             </div>
         </div>
     </div>
 </div>
-
 
