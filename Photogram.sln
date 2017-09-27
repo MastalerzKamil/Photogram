@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.26430.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Photogram", "Photogram\Photogram.csproj", "{84693675-7A20-443A-8483-E2D981F2BEF5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotogramTests", "PhotogramTests\PhotogramTests.csproj", "{A3F8A721-7CA1-46B4-9C26-1ED1E40A2203}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Photogram.Test", "Photogram.Test\Photogram.Test.csproj", "{E90EFA8B-9284-4987-9555-2018F6CB3B60}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{84693675-7A20-443A-8483-E2D981F2BEF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{84693675-7A20-443A-8483-E2D981F2BEF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{84693675-7A20-443A-8483-E2D981F2BEF5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A3F8A721-7CA1-46B4-9C26-1ED1E40A2203}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A3F8A721-7CA1-46B4-9C26-1ED1E40A2203}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A3F8A721-7CA1-46B4-9C26-1ED1E40A2203}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A3F8A721-7CA1-46B4-9C26-1ED1E40A2203}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E90EFA8B-9284-4987-9555-2018F6CB3B60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E90EFA8B-9284-4987-9555-2018F6CB3B60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E90EFA8B-9284-4987-9555-2018F6CB3B60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E90EFA8B-9284-4987-9555-2018F6CB3B60}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
