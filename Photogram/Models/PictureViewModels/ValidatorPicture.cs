@@ -9,23 +9,12 @@ using Microsoft.AspNetCore.Razor.Chunks;
 
 namespace Photogram.Models.PictureViewModels
 {
-    public class ValidatorPicture
+    public class ValidatorPicture : Picture
     {
-        public string PicturePath { get; set; }
-        public string PictureName { get; set; }
-        public string MimeType { get; set; }
 
-        public ValidatorPicture(string path)
+        public ValidatorPicture(string path) : base(path)
         {
-            this.PicturePath = path;
-            this.PictureName = Path.GetFileName(this.PicturePath);
-            this.MimeType = extractMimePicture();
-        }
 
-        public string extractMimePicture()
-        {
-            string mime = MimeMapping.MimeUtility.GetMimeMapping(PicturePath);
-            return mime;
         }
 
         public bool validatePicture()

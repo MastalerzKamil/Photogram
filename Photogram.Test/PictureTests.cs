@@ -6,13 +6,13 @@ using Photogram.Models.PictureViewModels;
 namespace Photogram.Test
 {
     [TestClass]
-    public class ValidatorPictureTests
+    public class PictureTests
     {
         [TestMethod]
         public void isJPGMime_GoodMime_ReturnsImageJpeg()
         {
             string path = "~/images/uploadedPicture/coffe.jpg";
-            ValidatorPicture uploadedPicture = new ValidatorPicture(path);
+            Picture uploadedPicture = new Picture(path);
 
             //ACT
             string mime=uploadedPicture.extractMimePicture();
@@ -25,7 +25,7 @@ namespace Photogram.Test
         public void isBadPngMime_GivenPngWhenJpeg()
         {
             string path = "~/images/uploadedPicture/coffe.png";
-            ValidatorPicture uploadedPicture = new ValidatorPicture(path);
+            Picture uploadedPicture = new Picture(path);
 
             string mime = uploadedPicture.extractMimePicture();
 
@@ -36,7 +36,7 @@ namespace Photogram.Test
         public void isGoodPngMime_GivenPngWhenJpeg()
         {
             string path = "~/images/uploadedPicture/coffe.png";
-            ValidatorPicture uploadedPicture = new ValidatorPicture(path);
+            Picture uploadedPicture = new Picture(path);
 
             string mime = uploadedPicture.extractMimePicture();
 
@@ -48,7 +48,7 @@ namespace Photogram.Test
         {
             string path = "~/images/uploadedPicture/cityPhoto.jpg";
             string searchedFileName = "cityPhoto.jpg";
-            ValidatorPicture uploadedFileName =new ValidatorPicture(path);
+            Picture uploadedFileName =new Picture(path);
 
             string fileName = uploadedFileName.PictureName;
 
