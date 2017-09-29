@@ -1,0 +1,77 @@
+﻿@using Microsoft.AspNetCore.Mvc
+@using Photogram.Controllers
+@using Photogram.Models.PictureViewModels
+@{
+    ViewData["Title"] = "Home Page";
+}
+<div>
+    <div class="uploadForm">
+        <form action="uploadPicture" method="post" enctype="multipart/form-data">
+            <input type="file" name="choosingFile">
+            <input type="submit">
+        </form>
+    </div>
+    <br />
+    <br />
+
+    <div class="wrap">
+        <!-- Define all of the tiles: -->
+        <div class="box">
+            <div class="boxInner">
+                <a href="@Url.Action("PicturePage", "Home", new {id="coffe.jpg"})">
+                    <img src="@Url.Content("~/images/uploadedPictures/coffe.jpg")" />
+                </a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="boxInner">
+                <a href="@Url.Action("PicturePage", "Home", new {id="cityPhoto.jpg"})">
+                    <img src="@Url.Content("~/images/uploadedPictures/cityPhoto.jpg")" />
+                </a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="boxInner">
+                <a href="@Url.Action("PicturePage", "Home", new {id="girlfriend.jpg"})">
+                    <img src="images/uploadedPictures/girlfriend.jpg" />
+                </a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="boxInner">
+                <a href="@Url.Action("PicturePage", "Home", new {id="h1o9ua-l.jpg"})">
+                    <img src="images/uploadedPictures/h1o9ua-l.jpg" />
+                </a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="boxInner">
+                <a href="@Url.Action("PicturePage", "Home", new {id="holidayGirl.jpg"})">
+                    <img src="images/uploadedPictures/holidayGirl.jpg" />
+                </a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="boxInner">
+                <a href="@Url.Action("PicturePage", "Home", new {id="icecream.jpg"})">
+                    <img src="images/uploadedPictures/icecream.jpg" />
+                </a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="boxInner">
+                <a href="@Url.Action("PicturePage", "Home", new {id="rainbowAngel.jpg"})">
+                    <img src="images/uploadedPictures/rainbowAngel.jpg" />
+                </a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="boxInner">
+                <a href="@Url.Action("PicturePage", "Home", new {id="sunshineIsland.jpg"})">
+                    <img src="images/uploadedPictures/sunshineIsland.jpg" />
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
